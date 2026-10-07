@@ -1,0 +1,15 @@
+# Secrets - never commit real credentials
+config/config.php
+config/staff-accounts.php
+
+# User-uploaded content (profile photos) - not source code
+uploads/*
+!uploads/.gitkeep
+!uploads/profile-photos/.gitkeep
+
+# PHPMailer library - large vendor files, re-download per the README instead
+lib/PHPMailer/*.php
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
